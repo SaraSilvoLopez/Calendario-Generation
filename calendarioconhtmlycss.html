@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calendario</title>
     <style>
 
         .box{
@@ -49,7 +49,7 @@
 
         .grillcalendar{
             display:grid;
-            grid-template-areas: 'daysoftheweek' 'pastdays' 'currentdays' 'nextdays';
+            grid-template-areas: 'daysoftheweek' 'days';
             grid-template-columns: repeat(7,1fr); 
             gap: 0.5rem;                      
         }
@@ -59,16 +59,16 @@
             justify-self: center;    
         }
 
-        .pastdays{
+        .past{
             background-color: rgb(117, 109, 109);
             color:rgb(168, 165, 159);
         }
 
-        .currentdays{        
+        .current{        
             color:rgb(255, 255, 255); 
             background-color: rgb(117, 109, 109);
         }
-        .nextdays{            
+        .next{            
             background-color: rgb(117, 109, 109);
             color:rgb(168, 165, 159);
         }
@@ -78,19 +78,14 @@
             border: black;
         }
 
-        .nextdays:hover{  
+        .days:hover{  
             border: 0.1em solid rgb(255, 244, 244);
         }
 
-        .pastdays:hover{  
-            border: 0.1em solid rgb(255, 244, 244);
+        .button{
+            border-color: blueviolet;
         }
-
-        .currentdays:hover{  
-            border: 0.1em solid rgb(255, 244, 244);
-        }
-
-
+      
     </style>
 
 </head>
@@ -120,50 +115,50 @@
                 <div class="daysoftheweek">S</div>
                 <div class="daysoftheweek">D</div>
             
-                <button class="pastdays">28</button>
-                <button class="pastdays">29</button>
-                <button class="pastdays">30</button>
-                <button class="pastdays">31</button>
+                <button class="past days">28</button>
+                <button class="past days">29</button>
+                <button class="past days">30</button>
+                <button class="past days">31</button>
             
-                <button class="currentdays">1</button>
-                <button class="currentdays">2</button>
-                <button class="currentdays">3</button>
-                <button class="currentdays">4</button>
-                <button class="currentdays">5</button>
-                <button class="currentdays">6</button>
-                <button class="currentdays">7</button>
-                <button class="currentdays">8</button>
-                <button class="currentdays">9</button>
-                <button class="currentdays today">10</button>
-                <button class="currentdays">11</button>
-                <button class="currentdays">12</button>
-                <button class="currentdays">13</button>
-                <button class="currentdays">14</button>
-                <button class="currentdays">15</button>
-                <button class="currentdays">16</button>
-                <button class="currentdays">17</button>
-                <button class="currentdays">18</button>
-                <button class="currentdays">19</button>
-                <button class="currentdays">20</button>
-                <button class="currentdays">21</button>
-                <button class="currentdays">22</button>
-                <button class="currentdays">23</button>
-                <button class="currentdays">24</button>
-                <button class="currentdays">25</button>
-                <button class="currentdays">26</button>
-                <button class="currentdays">27</button>
-                <button class="currentdays">28</button>
-                <button class="currentdays">29</button>
-                <button class="currentdays">30</button>
-                <button class="currentdays">31</button>
+                <button class="current days">1</button>
+                <button class="current days">2</button>
+                <button class="current days">3</button>
+                <button class="current days">4</button>
+                <button class="current days">5</button>
+                <button class="current days">6</button>
+                <button class="current days">7</button>
+                <button class="current days">8</button>
+                <button class="current days">9</button>
+                <button class="current days today">10</button>
+                <button class="current days">11</button>
+                <button class="current days">12</button>
+                <button class="current days">13</button>
+                <button class="current days">14</button>
+                <button class="current days">15</button>
+                <button class="current days">16</button>
+                <button class="current days">17</button>
+                <button class="current days">18</button>
+                <button class="current days">19</button>
+                <button class="current days">20</button>
+                <button class="current days">21</button>
+                <button class="current days">22</button>
+                <button class="current days">23</button>
+                <button class="current days">24</button>
+                <button class="current days">25</button>
+                <button class="current days">26</button>
+                <button class="current days">27</button>
+                <button class="current days">28</button>
+                <button class="current days">29</button>
+                <button class="current days">30</button>
+                <button class="current days">31</button>
             
-                <button class="nextdays">1</button>
-                <button class="nextdays">2</button>
-                <button class="nextdays">3</button>
-                <button class="nextdays">4</button>
-                <button class="nextdays">5</button>
-                <button class="nextdays">6</button>
-                <button class="nextdays">7</button>                   
+                <button class="next days">1</button>
+                <button class="next days">2</button>
+                <button class="next days">3</button>
+                <button class="next days">4</button>
+                <button class="next days">5</button>
+                <button class="next days">6</button>
+                <button class="next days">7</button>                   
         
             </div>
             
